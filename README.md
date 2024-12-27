@@ -1,6 +1,7 @@
 # Structure from Motion (SfM)
 
 This repository implements a Structure from Motion (SfM) pipeline to reconstruct a 3D scene from a sequence of 2D images using computer vision techniques and bundle adjustment.
+
 ---
 
 ## Features
@@ -8,6 +9,7 @@ This repository implements a Structure from Motion (SfM) pipeline to reconstruct
 - **3D Reconstruction:** Recover the 3D structure of a scene from a set of 2D images.
 - **Bundle Adjustment:** Optimize camera poses and 3D points for higher accuracy using the GTSAM library.
 - *Visualization:* Generate a 3D point cloud viewable with Open3D.
+  
 ---
 
 ### **Dependencies**
@@ -17,6 +19,7 @@ Ensure the following are installed:
 - **GTSAM**: For bundle adjustment.
 - **C++17 or later**: To compile the code.
 - **Python**: For 3D point cloud visualization (requires Open3D).
+
 ---
 
 ## Installation Steps
@@ -47,6 +50,7 @@ make
 ```sh
 python3 pcd_vis.py
 ```
+
 ---
 
 ## **Implementation Details**
@@ -73,6 +77,7 @@ The pipeline consists of four main steps:
 A reconstructed 3D model after bundle adjustment:
 
 ![SfM](results/sfm_BA.gif)
+
 ---
 
 ## **Dataset**
@@ -85,10 +90,12 @@ A reconstructed 3D model after bundle adjustment:
 - **Provider**: Christopher Zach
 
 This dataset is part of the COLMAP datasets collection, which also includes Gerrard Hall, Graham Hall, and Person Hall. More details are available [here](https://colmap.github.io/datasets.html).
+
 ---
 
 ## **Acknowledgements**
 
 - **Original Implementation**: This project draws inspiration from [Nghia Ho's SfM Example](https://github.com/nghiaho12/SFM_example.git).
 - **Dataset**: South Building dataset from the [COLMAP datasets](https://colmap.github.io/datasets.html) collection, provided by Christopher Zach.
+
 ---
